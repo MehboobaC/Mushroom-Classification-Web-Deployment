@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Mushrooms 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20111205
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Mushrooms by FCT</title>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marvel|Delius+Unicase' rel='stylesheet' type='text/css'>
+<link href="/static/css/style1v1.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="wrapper2">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">Mushrooms </a></h1>
+			
+			</div>
+			<div id="menu">
+				<ul>
+				
+					<li  ><a href="{{ url_for('home') }}">Home</a></li>
+					<li ><a href="{{ url_for('Type_form') }}">Type</a></li>
+					<li ><a href="{{ url_for('Health_form') }}">Health Tips</a></li>
+					<li><a href="{{ url_for('Qc_form') }}">Qc</a></li>
+                    <li class="current_page_item"><a href="{{ url_for('Visualization_form') }}">Visualization</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end #header -->
+		<div id="page">
+			<div id="content">
+				<div class="post">
+					<h2 class="title"><a href="#">Visualization based on dataset</a></h2>
+					
+					<div style="clear: both;">&nbsp;</div>
+					<div class="entry">
+						<p >Data can be understood easily by plotting graphs. Here univariate analysis is done for both classes (edible/ poisonous) of mushrooms. Distribution of edible and poisonous mushrooms in the dataset for different features were obtained as follows</p>	
+							<img src="/static/images/img1.PNG" alt="chart">
+							<p>Odor is strongly indicative of what mushrooms are (edible/poisonous). 
+								Here edible and poisonous mushrooms have largely distinct smells.
+								Edible mushrooms can have almond, anise, or no odor while any other smell indicates poisonous mushrooms.
+								None odor mushrooms can be either edible or poisonous.
+								Based on bruises, we cant distinguish mushrooms easily.
+								Only edible mushrooms have abundant or numerous population.
+								Most of the mushrooms with population several is poisonous.
+								Only edible musrooms have waste type habitat. For any other habitat types mushrooms can be either edible or poisonous.
+							</p>
+							<img src="/static/images/img2.PNG" alt="chart">
+							<p>Most of the mushrooms in the dataset are free of gill attachement.
+								Based on gill size, mushrooms are mainly under the broad category.
+								We cant classify the mushrooms based on gill attachment, gill size or gill spacing.
+								Only poisonous mushrooms have buff or green gill color.
+								Only edible mushrooms have red or orange gill color.</p>
+							<img src="/static/images/img3.PNG" alt="chart">
+							<p>Only poisonous mushrooms do not have rings.
+								Only edible mushrooms have flaring ring type and only poisonous mushrooms have none ring type.
+								Only edible mushrooms have brown veil color and only poisonous mushrooms have yellow veil color.
+								With in the dataset, only partial veil type mushrooms are there.
+								</p>
+							<img src="/static/images/img4.PNG" alt="chart">
+							<p>Most common stalk surface type in mushrooom is smooth.
+								Commonly mushrooms have stalk color above and below ring as white.
+								All white color mushrooms are not edible. We cant eat mushroom if its color is simply white.
+								Only edible mushrooms have stalk color above ring as gray, red, or orange.
+								Only Poisonous mushrooms have stalk color above ring as buff, cinnamon or yellow.
+								Stalk color below ring is grey,red or orange for only edible mushrooms where as buff for only poisonous mushrooms.
+							</p>
+							<img src="/static/images/img5.PNG" alt="chart">
+							<p>Based on stalk shape, we cant distinguish mushrooms easily. 
+								Only edible mushrooms have rooted stalk root.
+								 If stalk root is bulbous, there is equal chance that mushrooms can be edible or poisonous.
+							</p>
+							<img src="/static/images/img6.PNG" alt="chart">
+							<p>Only edible mushrooms have green or purple cap-color.
+								Only poisonous mushrooms have grooves as cap-surface.
+								Only poisonous mushrooms have conical cap shape and only edible mushrooms have sunken cap shape.
+								Only edible mushrooms have buff, orange, purple or yellow spore print color and only poisonous mushrooms have green spore print color.
+
+							</p>
+					</div>
+				</div>
+				<!-- <div class="post">
+					<h2 class="title"><a href="#">Lorem ipsum sed aliquam</a></h2>
+					<p class="meta"><span class="date">November 20, 2011</span><span class="posted">Posted by <a href="#">Someone</a></span></p>
+					<div style="clear: both;">&nbsp;</div>
+					<div class="entry">
+						<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus.</p>
+						<p class="links"><a href="#" class="more">Read More</a><a href="#" title="b0x" class="comments">Comments</a></p>
+					</div>
+				</div>
+				<div class="post">
+					<h2 class="title"><a href="#">Consecteteur hendrerit </a></h2>
+					<p class="meta"><span class="date">November 20, 2011</span><span class="posted">Posted by <a href="#">Someone</a></span></p>
+					<div style="clear: both;">&nbsp;</div>
+					<div class="entry">
+						<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.  Mauris quam enim, molestie in, rhoncus.</p>
+						<p class="links"><a href="#" class="more">Read More</a><a href="#" title="b0x" class="comments">Comments</a></p>
+					</div>
+				</div> -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+			<!-- end #content -->
+			
+			<!-- end #sidebar -->
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #page -->
+		<div id="footer">
+			<p> DESIGN BY TEAM 5.</a>.</p>
+		</div>
+	</div>
+</div>
+<!-- end #footer -->
+</body>
+</html>
